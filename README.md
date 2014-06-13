@@ -287,7 +287,7 @@ print inspect value
 new Tag(new Value(a, b), new Arg(c))
 ```
 
-You will sometimes see parentheses used to group functions (instead of being used to group function parameters). Examples of using this style (hereafter referred to as the "function grouping style"):
+Avoid over-use of parentheses used to group functions (instead of being used to group function parameters). Examples of using this style (hereafter referred to as the "function grouping style"):
 
 ```coffeescript
 ($ '#selektor').addClass 'klass'
@@ -303,14 +303,7 @@ $('#selektor').addClass 'klass'
 foo(4).bar 8
 ```
 
-In cases where method calls are being chained, some adopters of this style prefer to use function grouping for the initial call only:
-
-```coffeescript
-($ '#selektor').addClass('klass').hide() # Initial call only
-(($ '#selektor').addClass 'klass').hide() # All calls
-```
-
-The function grouping style is not recommended. However, **if the function grouping style is adopted for a particular project, be consistent with its usage.**
+The function grouping style is not recommended.
 
 <a name="strings"/>
 ## Strings
@@ -362,7 +355,7 @@ Multi-line if/else clauses should use indentation:
 <a name="looping_and_comprehensions"/>
 ## Looping and Comprehensions
 
-Take advantage of comprehensions whenever possible:
+Take advantage of comprehensions:
 
 ```coffeescript
   # Yes
@@ -377,7 +370,7 @@ Take advantage of comprehensions whenever possible:
 To filter:
 
 ```coffeescript
-result = (item for item in array when item.name is "test")
+result = (item for item in array when item.name == "test")
 ```
 
 To iterate over the keys and values of objects:
@@ -435,18 +428,18 @@ If a custom annotation is required, the annotation should be documented in the p
 <a name="miscellaneous"/>
 ## Miscellaneous
 
-`and` is preferred over `&&`.
+`&&` is preferred over `and`.
 
-`or` is preferred over `||`.
+`||` is preferred over `or`.
 
-`is` is preferred over `==`.
+`==` is preferred over `is`.
 
-`not` is preferred over `!`.
+`!` is preferred over `not`.
 
-`or=` should be used when possible:
+`||=` should be used when possible:
 
 ```coffeescript
-temp or= {} # Yes
+temp ||= {} # Yes
 temp = temp || {} # No
 ```
 
