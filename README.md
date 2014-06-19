@@ -231,7 +231,10 @@ Section comments are preceded by a single blank line with a `#`. Sections should
 #
 # Section Name
 
-
+doStuff: ->
+  stuff()
+  
+  
 ```
 
 ## Naming Conventions
