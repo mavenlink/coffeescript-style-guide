@@ -222,6 +222,18 @@ However, inline comments can be useful in certain scenarios:
 ```
 
 <a name="naming_conventions"/>
+
+### Section Comments
+
+Section comments are preceded by a single blank line with a `#`. Sections should be separated by two line breaks.
+
+```coffeescript
+#
+# Section Name
+
+
+```
+
 ## Naming Conventions
 
 Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
