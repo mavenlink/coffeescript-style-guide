@@ -164,8 +164,15 @@ Additional recommendations:
            # No
            x      = 1
            y      = 1
-           fooBar = 3
+           fooBar = 3           
         ```
+        
+- Always pad object literals with whitespace
+
+    ```coffeescript
+    { property: 'property' } # Yes
+    {property: 'property'} # No
+    ````
 
 <a name="comments"/>
 ## Comments
