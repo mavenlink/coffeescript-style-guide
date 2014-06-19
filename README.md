@@ -228,6 +228,13 @@ However, inline comments can be useful in certain scenarios:
 Section comments are preceded by a single blank line with a `#`. Sections should be separated by two line breaks.
 
 ```coffeescript
+
+#
+# Section Name
+
+declareStuff: 'stuff'
+
+
 #
 # Section Name
 
