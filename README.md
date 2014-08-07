@@ -73,7 +73,7 @@ Do not include trailing whitespace on any lines.
 <a name="optional_commas"/>
 ### Optional Commas
 
-Avoid the use of commas before newlines when properties or elements of an Object or Array are listed on separate lines.
+Avoid the use of commas before newlines when properties or elements of an Object or Array are listed on separate lines. Avoid using braces for object literals.
 
 ```coffeescript
 # Yes
@@ -95,6 +95,10 @@ foo = [
 bar:
   label: 'test',
   value: 87
+bar: {
+  label: 'test'
+  value: 87
+}
 ```
 
 <a name="encoding"/>
@@ -502,6 +506,20 @@ console.log args... # Yes
 
 (a, b, c, rest...) -> # Yes
 ```
+
+Don't have large amounts of HTML in any Coffeescript code. Use a template instead.
+
+Avoid the use of **semi-colons** `;`:
+
+```coffeescript
+foo.bar() # Yes
+foo.bar(); # No
+```
+
+Minimize usage of fat arrows (`=>`) arrows and favor single arrows (`->`).
+
+Sometimes you really need to bind to a specific context/scope - 90% of the time you don’t. Fat arrows are twice as a slow as single quotes (even with V8’s native Function#bind).
+
 
 [coffeescript]: http://jashkenas.github.com/coffee-script/
 [coffeescript-issue-425]: https://github.com/jashkenas/coffee-script/issues/425
