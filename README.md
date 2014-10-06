@@ -185,7 +185,14 @@ If modifying code that is described by an existing comment, update the comment s
 
 The first word of the comment should be capitalized, unless the first word is an identifier that begins with a lower-case letter.
 
+There should be one space of padding preceding the comment.
+
 If a comment is short, the period at the end can be omitted.
+
+```coffeescript
+  # Yes
+  #no
+```
 
 <a name="block_comments"/>
 ### Block Comments
