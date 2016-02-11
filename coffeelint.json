@@ -91,8 +91,8 @@
     },
     "cyclomatic_complexity": {
         "name": "cyclomatic_complexity",
-        "value": 10,
-        "level": "ignore"
+        "value": 5,
+        "level": "warn"
     },
     "newlines_after_classes": {
         "name": "newlines_after_classes",
