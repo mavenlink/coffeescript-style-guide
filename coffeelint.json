@@ -48,6 +48,11 @@
             "right": 1
         }
     },
+    "braces_spacing": {
+      "spaces": 1,
+      "empty_object_spaces": 0,
+      "level": "warn"
+    },
     "no_implicit_braces": {
         "name": "no_implicit_braces",
         "level": "ignore",
