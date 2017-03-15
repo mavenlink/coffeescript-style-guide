@@ -525,7 +525,7 @@ foo.bar(); # No
 
 Minimize usage of fat arrows (`=>`) arrows and favor single arrows (`->`).
 
-Sometimes you really need to bind to a specific context/scope - 90% of the time you don’t. Fat arrows are twice as a slow as single quotes (even with V8’s native Function#bind).
+Sometimes you really need to bind to a specific context/scope - 90% of the time you don’t. Fat arrows are twice as a slow as single arrows (even with V8’s native Function#bind).
 
 
 [coffeescript]: http://jashkenas.github.com/coffee-script/
