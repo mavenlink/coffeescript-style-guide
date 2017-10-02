@@ -176,7 +176,7 @@ Additional recommendations:
     ```coffeescript
     { property: 'property' } # Yes
     {property: 'property'} # No
-    ````
+    ```
 
 <a name="comments"/>
 ## Comments
